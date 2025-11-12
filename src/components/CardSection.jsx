@@ -14,10 +14,10 @@ const CardSection = () => {
         </div>
 
         {/* Text Content */}
-        <div className="pl-0 lg:pl-8 space-y-4 text-center lg:text-left">
+        <div className="pl-0 lg:pl-8 space-y-4">
           {/* Logo/Brand */}
           <div className="flex justify-center lg:justify-start items-center space-x-1">
-            <span className="text-md sm:text-l font-thin text-blue-700">
+            <span className="text-md sm:text-l font-thin text-center  text-blue-700">
               CREDPAL CARD
             </span>
           </div>
@@ -28,7 +28,7 @@ const CardSection = () => {
           </h1>
 
           {/* Description */}
-          <p className="text-sm sm:text-md text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0">
+          <p className="text-sm sm:text-md text-gray-600 leading-relaxed max-w-md mx-auto lg:mx-0 text-left">
             Spread purchases from your favourite brands with Credpal.
             <br />
             You can pay in 4 with your Credpal card anywhere

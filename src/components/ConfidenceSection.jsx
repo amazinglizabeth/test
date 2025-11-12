@@ -10,7 +10,7 @@ export default function ConfidenceSection() {
           Shop with confidence
         </h3>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
           {/* Card 1 */}
           <div className="flex flex-col items-start">
             <img src={Bag} alt="bag icon" className="w-8 h-8 mb-3" />

@@ -1,13 +1,12 @@
-import React from 'react';
+import FooterLogo from "../assets/icons/Vector.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-400 px-8 py-10">
+    <footer className="bg-[#191919] text-gray-400 px-10 md:px-15 py-15 md:py-20">
       {/* Top part with logo and social icons */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-700 pb-8">
         <div className="flex items-center space-x-2 mb-6 md:mb-0">
-          {/* Placeholder for logo */}
-          <span className="text-white font-bold text-xl">CredPal.</span>
+          <img src={FooterLogo} alt="logo" />
         </div>
         <div className="flex space-x-6 text-gray-400">
           <a href="#" aria-label="LinkedIn" className="hover:text-white">
@@ -48,10 +47,26 @@ export default function Footer() {
         <div>
           <h4 className="text-white mb-3 font-semibold">Products</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:text-white">Shop</a></li>
-            <li><a href="#" className="hover:text-white">Cards</a></li>
-            <li><a href="#" className="hover:text-white">Credit Builder</a></li>
-            <li><a href="#" className="hover:text-white">Investment</a></li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Shop
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Cards
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Credit Builder
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Investment
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -59,10 +74,26 @@ export default function Footer() {
         <div>
           <h4 className="text-white mb-3 font-semibold">Products</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:text-white">Shop</a></li>
-            <li><a href="#" className="hover:text-white">Cards</a></li>
-            <li><a href="#" className="hover:text-white">Credit Builder</a></li>
-            <li><a href="#" className="hover:text-white">Investment</a></li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Shop
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Cards
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Credit Builder
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Investment
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -70,9 +101,21 @@ export default function Footer() {
         <div>
           <h4 className="text-white mb-3 font-semibold">Legal</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:text-white">Customer Terms of use</a></li>
-            <li><a href="#" className="hover:text-white">Merchant Terms of service</a></li>
-            <li><a href="#" className="hover:text-white">Privacy Notice</a></li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Customer Terms of use
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Merchant Terms of service
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Privacy Notice
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -80,8 +123,16 @@ export default function Footer() {
         <div>
           <h4 className="text-white mb-3 font-semibold">Support</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:text-white">FAQs</a></li>
-            <li><a href="#" className="hover:text-white">Blog</a></li>
+            <li>
+              <a href="#" className="hover:text-white">
+                FAQs
+              </a>
+            </li>
+            <li>
+              <a href="#" className="hover:text-white">
+                Blog
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -89,8 +140,14 @@ export default function Footer() {
         <div>
           <h4 className="text-white mb-3 font-semibold">Contact us</h4>
           <ul className="space-y-1">
-            <li><a href="mailto:hello@credpal.com" className="hover:text-white">hello@credpal.com</a></li>
-            <li><span>+234 708 740 9746</span></li>
+            <li>
+              <a href="mailto:hello@credpal.com" className="hover:text-white">
+                hello@credpal.com
+              </a>
+            </li>
+            <li>
+              <span>+234 708 740 9746</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -98,7 +155,10 @@ export default function Footer() {
       {/* Bottom part */}
       <div className="max-w-7xl mx-auto flex justify-between items-center text-gray-600 text-xs">
         <div>© CredPal 2024</div>
-        <a href="#top" className="text-white font-semibold hover:underline cursor-pointer">
+        <a
+          href="#top"
+          className="text-white font-semibold hover:underline cursor-pointer"
+        >
           Go back to top ↑
         </a>
       </div>

@@ -2,12 +2,10 @@ import PayCard from "../assets/images/paycard.png";
 
 const ShoppingSection = () => {
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-6 sm:p-8 md:p-12">
+    <div className="min-h-screen bg-white flex items-center justify-center px-10 md:px-15 py-15 md:py-20">
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-
         {/* Left Content Section */}
         <div className="space-y-4 text-center lg:text-left">
-          
           {/* Logo */}
           <div className="flex justify-center lg:justify-start items-center">
             <span className="text-sm sm:text-md text-blue-700 font-semibold">
@@ -22,8 +20,9 @@ const ShoppingSection = () => {
 
           {/* Description */}
           <p className="text-sm sm:text-base text-gray-900 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
-            One app to find, shop, and pay your way — CreditPal connects you to the best brands, 
-            flexible payments, and real-time tracking of your favourite products, all in one place.
+            One app to find, shop, and pay your way — CreditPal connects you to
+            the best brands, flexible payments, and real-time tracking of your
+            favourite products, all in one place.
           </p>
 
           {/* Learn More Button */}
@@ -32,7 +31,6 @@ const ShoppingSection = () => {
               Learn More →
             </button>
           </div>
-
         </div>
 
         {/* Right Image Section */}
@@ -43,7 +41,6 @@ const ShoppingSection = () => {
             className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg rounded-2xl"
           />
         </div>
-
       </div>
     </div>
   );

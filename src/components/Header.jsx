@@ -1,114 +1,158 @@
-import { useState } from 'react';
-import Logo from "../assets/icons/logo.svg"
+import { useState } from "react";
+import Logo from "../assets/icons/logo.svg";
+import NigeriaFlag from "../assets/icons/flag.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-br from-blue-100 to-blue-50 shadow-sm border-b border-gray-200 px-3">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          {/* Left Section - Logo */}
-          <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-             <img src={Logo} alt="logo" />
+    <header
+      className="w-full"
+      style={{
+        background:
+          "linear-gradient(90deg, #E8FCFF 0%, #FCF8F0 48%, #E6EBFE 71%, #D9E8FF 100%)",
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-10 md:px-15 ">
+        <div className="flex items-center justify-between h-16">
+          {/* Left: Logo + Nav */}
+          <div className="flex items-center gap-8">
+            {/* Logo */}
+            <div className="shrink-0">
+              <img src={Logo} alt="CredPal" className="h-6 sm:h-7" />
             </div>
+
+            {/* Desktop nav */}
+            <nav className="hidden md:flex items-center gap-8 pl-5">
+              <a
+                href="#"
+                className="text-md text-gray-700 hover:text-gray-900 hover:underline font-medium transition"
+              >
+                Products
+              </a>
+              <a
+                href="#"
+                className="text-md text-gray-700 hover:text-gray-900 hover:underline  font-medium transition"
+              >
+                Business
+              </a>
+              <a
+                href="#"
+                className="text-md text-gray-700 hover:text-gray-900 hover:underline  font-medium transition"
+              >
+                Shop
+              </a>
+            </nav>
           </div>
 
-          {/* Center Section - Navigation Links (Desktop) */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#" className="text-gray-700 hover:text-gray-800 font-medium transition-colors duration-200">
-              Products
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-800 font-medium transition-colors duration-200">
-              Business
-            </a>
-            <a href="#" className="text-gray-700 hover:text-gray-800 font-medium transition-colors duration-200">
-              Shop
-            </a>
-          </nav>
-
-          {/* Right Section - Desktop User & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
-            {/* User Avatar/Initials (Desktop) */}
-            <div className="hidden lg:flex items-center">
-              <a href="#">
-                <button className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition cursor-pointer">
-              Get the App
-            </button>
-          </a>
+          {/* Right: language + CTA + mobile toggle */}
+          <div className="flex items-center gap-4">
+            {/* Language selector */}
+            <div className="hidden sm:flex items-center gap-2 cursor-pointer select-none">
+              <img
+                src={NigeriaFlag}
+                alt="NG"
+                className="w-5 h-5 rounded-full"
+              />
+              <svg
+                className="w-3 h-3 text-gray-700"
+                viewBox="0 0 20 20"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path
+                  d="M6 8l4 4 4-4"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </div>
 
-            {/* Mobile Menu Button */}
-            <button 
-              className="lg:hidden p-2 rounded-md text-gray-700 hover:text-gray-800 hover:bg-gray-100 transition-colors duration-200"
+            {/* CTA */}
+            <div className="hidden md:block">
+              <a
+                href="#"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-black text-white text-sm font-semibold shadow-sm hover:bg-gray-800 transition"
+              >
+                Get the App
+              </a>
+            </div>
+
+            {/* Mobile CTA (small) */}
+            <div className="md:hidden">
+              <a
+                href="#"
+                className="inline-flex items-center px-3 py-1.5 rounded-full bg-black text-white text-sm font-semibold shadow-sm hover:bg-gray-800 transition"
+              >
+                App
+              </a>
+            </div>
+
+            {/* Hamburger */}
+            <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="ml-1 inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 md:hidden"
+              aria-expanded={isMobileMenuOpen}
+              aria-label="Toggle navigation"
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 )}
               </svg>
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation Menu */}
+        {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4 bg-white">
-            <div className="flex flex-col space-y-4">
-              <a 
-                href="#" 
-                className="text-gray-700 hover:text-gray-800 font-medium py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
+          <div className="md:hidden mt-2 pb-4">
+            <div className="flex flex-col gap-2">
+              <a
+                href="#"
+                className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded"
               >
                 Products
               </a>
-              <a 
-                href="#" 
-                className="text-gray-700 hover:text-gray-800 font-medium py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <a
+                href="#"
+                className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded"
               >
                 Business
               </a>
-              <a 
-                href="#" 
-                className="text-gray-700 hover:text-gray-800 font-medium py-2 px-4 hover:bg-gray-50 rounded-lg transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
+              <a
+                href="#"
+                className="px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded"
               >
                 Shop
               </a>
-              
-              {/* Mobile User Section */}
-              <div className="border-t border-gray-200 pt-4 mt-2">
-                <div className="flex items-center space-x-3 px-4 py-2">
-                  <a href="#">
-                <button className="bg-black text-white px-6 py-3 rounded-full font-semibold hover:bg-gray-800 transition cursor-pointer">
-              Get the App
-            </button>
-          </a>
-                </div>
-              </div>
+              <a
+                href="#"
+                className="mt-2 px-3 py-2 text-sm bg-black text-white rounded-full inline-block text-center"
+              >
+                Get the App
+              </a>
             </div>
           </div>
         )}
-
-        {/* Tablet Navigation (hidden on mobile and desktop) */}
-        <div className="hidden md:flex lg:hidden border-t border-gray-200 py-3">
-          <div className="flex justify-around w-full">
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium text-sm px-3 py-2">
-              Products
-            </a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium text-sm px-3 py-2">
-              Business
-            </a>
-            <a href="#" className="text-gray-700 hover:text-purple-600 font-medium text-sm px-3 py-2">
-              Shop
-            </a>
-          </div>
-        </div>
       </div>
     </header>
   );

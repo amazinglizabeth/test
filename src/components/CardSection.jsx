@@ -2,7 +2,7 @@ import Card from "../assets/images/card.png";
 
 const CardSection = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center px-10 md:px-15 py-15 md:py-20">
+    <div className="min-h-screen flex items-center justify-center px-10 md:px-15 py-12 md:py-20">
       <div className="max-w-6xl w-full grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         {/* Card Image */}
         <div className="relative flex justify-center lg:justify-start">

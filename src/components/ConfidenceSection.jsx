@@ -15,7 +15,7 @@ export default function ConfidenceSection() {
           <div className="flex flex-col items-start">
             <img src={Bag} alt="bag icon" className="w-8 h-8 mb-3" />
             <h4 className="text-lg font-bold text-gray-900 mb-1">Pay Later</h4>
-            <p className="text-sm text-gray-500 max-w-xs">
+            <p className="text-sm text-gray-500">
               Shop now and split your purchases into 4 interest-free payments.
             </p>
           </div>
@@ -26,7 +26,7 @@ export default function ConfidenceSection() {
             <h4 className="text-lg font-bold text-gray-900 mb-1">
               0% Interest
             </h4>
-            <p className="text-sm text-gray-500 max-w-xs">
+            <p className="text-sm text-gray-500 ">
               Shop now and split your purchases into 4 interest-free payments.
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function ConfidenceSection() {
             <h4 className="text-lg font-bold text-gray-900 mb-1">
               Build Credit
             </h4>
-            <p className="text-sm text-gray-500 max-w-xs">
+            <p className="text-sm text-gray-500">
               Seamless financial empowerment for your everyday lifestyle.
             </p>
           </div>

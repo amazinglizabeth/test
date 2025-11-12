@@ -2,7 +2,7 @@ import Phone from "../assets/images/phone.png";
 
 export default function SavingSection() {
   return (
-    <section className="max-w-7xl mx-auto px-8 md:px-10 py-15 md:py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <section className="max-w-7xl mx-auto px-8 md:px-10 py-12 md:py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
       {/* Image */}
       <div className="md:flex-1">
         <img

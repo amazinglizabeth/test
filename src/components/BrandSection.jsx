@@ -3,7 +3,7 @@ import brand2 from "../assets/images/rightbrands.png";
 
 export default function BrandSection({ onGetStarted }) {
   return (
-    <section className="w-full flex justify-center px-10 md:px-15 py-15 md:py-20">
+    <section className="w-full flex justify-center px-10 md:px-15 py-12 md:py-20">
       <div className="relative max-w-6xl w-full bg-[#071033] rounded-2xl p-8 sm:p-12 py-4 lg:p-16 overflow-hidden">
         {/* Left & Right decorative image groups */}
         <img

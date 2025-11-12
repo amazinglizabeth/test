@@ -26,7 +26,7 @@ const HeroSection = () => {
             </p>
 
             <div className="flex justify-center lg:justify-start">
-              <button className="bg-blue-800 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-semibold text-base sm:text-lg hover:bg-blue-600 transition-colors duration-200 shadow-lg hover:shadow-xl">
+              <button className="bg-blue-800 text-white px-6 sm:px-8 py-3 rounded-full font-semibold text-base sm:text-lg hover:bg-blue-600 transition-colors duration-200 shadow-lg hover:shadow-xl">
                 Get Started →
               </button>
             </div>

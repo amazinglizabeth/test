@@ -69,6 +69,16 @@ const Header = () => {
               </svg>
             </div>
 
+            {/* CTA */}
+            <div className="hidden md:block">
+              <a
+                href="#"
+                className="inline-flex items-center px-4 py-2 rounded-full bg-black text-white text-sm font-semibold shadow-sm hover:bg-gray-800 transition"
+              >
+                Get the App
+              </a>
+            </div>
+
             {/* Hamburger */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

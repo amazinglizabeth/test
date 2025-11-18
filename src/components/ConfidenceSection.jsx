@@ -5,8 +5,8 @@ import Card from "../assets/icons/CreditCard.png";
 export default function ConfidenceSection() {
   return (
     <section className="w-full bg-[#F7F8FA]">
-      <div className="max-w-6xl mx-auto px-6 md:px-10 py-12 md:py-20">
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 text-center md:text-left">
+      <div className="max-w-6xl mx-auto ppx-8 md:px-10 lg:px-3 py-12 md:py-15">
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 text-center md:text-left">
           Shop with confidence
         </h3>
 

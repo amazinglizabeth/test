@@ -2,7 +2,7 @@ import Man from "../assets/images/man.png";
 
 export default function CtaSection() {
   return (
-    <section className="max-w-7xl mx-auto px-10 md:px-15 py-12 md:py-20 flex flex-col md:flex-row items-center gap-8 md:gap-12">
+    <section className="max-w-7xl mx-auto px-8 md:px-10 lg:px-3 py-12 md:py-15 flex flex-col md:flex-row items-center gap-8 md:gap-12">
       {/* Text Content */}
       <div className="md:flex-1 max-w-xl text-center md:text-left">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-black mb-4 leading-snug">

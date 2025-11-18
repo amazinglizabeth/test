@@ -4,7 +4,7 @@ import HomeCard from "../assets/images/homeCard.png";
 const HeroSection = () => {
   return (
     <div
-      className="min-h-screen flex items-center justify-center px-10 md:px-15  lg:px-8 py-12"
+      className="min-h-screen flex items-center justify-center px-8 md:px-10 lg:px-3 py-12 md:py-15"
       style={{
         background:
           "linear-gradient(90deg, #E8FCFF 0%, #FCF8F0 48%, #E6EBFE 71%, #D9E8FF 100%)",

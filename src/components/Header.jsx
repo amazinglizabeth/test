@@ -13,7 +13,7 @@ const Header = () => {
           "linear-gradient(90deg, #E8FCFF 0%, #FCF8F0 48%, #E6EBFE 71%, #D9E8FF 100%)",
       }}
     >
-      <div className="max-w-7xl mx-auto px-10 md:px-15 ">
+      <div className="max-w-7xl mx-auto px-8 md:px-10 lg:px-3">
         <div className="flex items-center justify-between h-16">
           {/* Left: Logo + Nav */}
           <div className="flex items-center gap-8">

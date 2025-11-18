@@ -2,7 +2,7 @@ import FooterLogo from "../assets/icons/Vector.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#191919] text-gray-400 px-10 md:px-15 py-15 md:py-20">
+    <footer className="bg-[#191919] text-gray-400 px-8 md:px-10 lg:px-3 py-12 md:py-15">
       {/* Top part with logo and social icons */}
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center border-b border-gray-700 pb-8">
         <div className="flex items-center space-x-2 mb-6 md:mb-0">
